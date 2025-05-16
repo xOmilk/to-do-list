@@ -1,0 +1,65 @@
+@import './main';
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #e9ecef;
+
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+        font-weight: bold;
+        color: rgb(70, 231, 70);
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        text-shadow: 1px 2px black;
+    }
+}
+
+header {
+    background: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+/*     border: 1px solid red; */
+    margin: auto auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 30px 20px; */
+
+    input {
+        font-size: 1.5rem;
+        padding: 30px;
+        padding-left: 5%;
+        width: 80%;
+    }
+
+    .add{
+        cursor: pointer;
+        font-weight: bolder;
+        background-color: lightgreen;
+        border-radius: 10px;
+        border: none;
+        width: 20%;
+        align-self: stretch;
+        padding: 30px;
+        transition: background 1s, color 0.5s;
+        &:hover{
+/*             color: white; */
+            background: green;
+        }
+
+    }
+
+
+}

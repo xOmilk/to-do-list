@@ -1,0 +1,110 @@
+main {
+    margin: auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-top: 40px;
+    /* border: 1px solid green; */
+
+}
+
+.item.clicado {
+    background-color: rgb(221, 241, 189);
+
+    .item-nome {
+        text-decoration: line-through;
+        color: grey;
+    }
+}
+
+
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+
+    .item-icone {
+        height: auto;
+        flex: 15%;
+        /* border: 1px solid black; */
+        text-align: center;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+
+    }
+
+    .item-nome {
+        flex: 65%;
+        /* border: 1px solid red; */
+        font-size: 20px;
+        text-align: left;
+        text-indent: 50px;
+        font-weight: bold;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        /* Estilos para truncar texto */
+        max-width: 65%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+
+    .item-botao {
+        flex: 20%;
+        height: max-content;
+
+        .delete {
+            border: none;
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: crimson;
+            transition: all 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                background: darkred;
+            }
+
+            img,
+            p {
+                display: inline;
+            }
+
+            img {
+                text-align: left;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: bold;
+                margin: auto auto;
+            }
+        }
+    }
+}

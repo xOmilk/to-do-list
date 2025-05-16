@@ -1,0 +1,151 @@
+main {
+  margin: auto auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin-top: 40px;
+  /* border: 1px solid green; */
+}
+
+.item.clicado {
+  background-color: rgb(221, 241, 189);
+}
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2%;
+}
+.item .item-icone {
+  height: auto;
+  flex: 15%;
+  /* border: 1px solid black; */
+  text-align: center;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .item-icone:hover {
+  cursor: pointer;
+}
+.item .item-nome {
+  flex: 65%;
+  /* border: 1px solid red; */
+  font-size: 20px;
+  text-align: left;
+  text-indent: 50px;
+  font-weight: bold;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* Estilos para truncar texto */
+  max-width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item .item-nome:hover {
+  cursor: pointer;
+}
+.item .item-botao {
+  flex: 20%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.item .item-botao .delete {
+  border: none;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: crimson;
+  transition: all 0.5s;
+}
+.item .item-botao .delete:hover {
+  cursor: pointer;
+  background: darkred;
+}
+.item .item-botao .delete img,
+.item .item-botao .delete p {
+  display: inline;
+}
+.item .item-botao .delete img {
+  text-align: left;
+}
+.item .item-botao .delete p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #e9ecef;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+  font-weight: bold;
+  color: rgb(70, 231, 70);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 1px 2px black;
+}
+
+header {
+  background: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  /*     border: 1px solid red; */
+  margin: auto auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* padding: 30px 20px; */
+}
+header input {
+  font-size: 1.5rem;
+  padding: 30px;
+  padding-left: 5%;
+  width: 80%;
+}
+header .add {
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: lightgreen;
+  border-radius: 10px;
+  border: none;
+  width: 20%;
+  align-self: stretch;
+  padding: 30px;
+  transition: background 1s, color 0.5s;
+}
+header .add:hover {
+  /*             color: white; */
+  background: green;
+}/*# sourceMappingURL=styles.css.map */
